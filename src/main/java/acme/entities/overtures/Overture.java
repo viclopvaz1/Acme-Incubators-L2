@@ -9,6 +9,7 @@ import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 
 import acme.framework.datatypes.Money;
@@ -19,7 +20,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Overtures extends DomainEntity {
+public class Overture extends DomainEntity {
 
 	public static final long	serialVersionUID	= 1L;
 
@@ -28,18 +29,22 @@ public class Overtures extends DomainEntity {
 
 	@Temporal(TemporalType.TIMESTAMP)
 	@Past
+	@NotNull
 	private Date				creationMoment;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date				deadline;
 
 	@NotBlank
 	private String				description;
 
 	@Valid
+	@NotNull
 	private Money				maxMoney;
 
 	@Valid
+	@NotNull
 	private Money				minMoney;
 
 	@Email
