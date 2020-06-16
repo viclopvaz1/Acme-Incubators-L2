@@ -48,6 +48,8 @@ master.menu.anonymous2.list-ruiz-bulletin = List Ruiz Bulletin
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.list-notice = Notice List
+master.menu.administrator.configuration = Spam List
 
 # master.menu.provider ########################################################
 

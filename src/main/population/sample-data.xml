@@ -16,5 +16,22 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
 	<import resource="conversion-service.xml" />
+		<bean id="notice01" class="acme.entities.notices.Notice">
+		<property name="header" value="https://www.youtube.com/"/>
+		<property name="creationMoment" value="2020/06/16 10:35" />
+		<property name="deadline" value="2021/06/16 10:35" />
+		<property name="link">
+			<null />
+		</property>
+		<property name="body" value="This is the description of a sample notice" />
+	</bean>
+	
+	<bean id="configuration01" class="acme.entities.configurations.Configuration">
+		<property name="spamWords" value=" viagra, sex, 
+			cialis, hard_core, cialis, nigeria, you’ve won, million dollar, 
+				millon de dolares, has ganado, explícito, sexo"></property> 
+		<property name="spamThreshold" value="2.50"/>
+		<property name="sectors" value="Technology, Science, Arts, Business"></property> 
+	</bean>
 
 </beans>
