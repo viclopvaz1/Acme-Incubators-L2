@@ -10,7 +10,7 @@ import acme.entities.cordonbulletins.cordonBulletin;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface CordonBulletinRepository extends AbstractRepository {
+public interface AnonymousCordonBulletinRepository extends AbstractRepository {
 
 	@Query("select s from cordonBulletin s")
 	Collection<cordonBulletin> findMany();

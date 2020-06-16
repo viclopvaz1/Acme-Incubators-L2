@@ -12,10 +12,10 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractCreateService;
 
 @Service
-public class CordonBulletinCreateService implements AbstractCreateService<Anonymous, cordonBulletin> {
+public class AnonymousCordonBulletinCreateService implements AbstractCreateService<Anonymous, cordonBulletin> {
 
 	@Autowired
-	CordonBulletinRepository repository;
+	AnonymousCordonBulletinRepository repository;
 
 
 	@Override

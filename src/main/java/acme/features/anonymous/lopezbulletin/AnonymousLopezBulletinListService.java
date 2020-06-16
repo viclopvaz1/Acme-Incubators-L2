@@ -13,10 +13,10 @@ import acme.framework.entities.Anonymous;
 import acme.framework.services.AbstractListService;
 
 @Service
-public class LopezBulletinListService implements AbstractListService<Anonymous, lopezBulletin> {
+public class AnonymousLopezBulletinListService implements AbstractListService<Anonymous, lopezBulletin> {
 
 	@Autowired
-	LopezBulletinRepository repository;
+	AnonymousLopezBulletinRepository repository;
 
 
 	@Override
