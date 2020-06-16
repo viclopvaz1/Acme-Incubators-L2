@@ -10,7 +10,7 @@ import acme.entities.lopezbulletins.lopezBulletin;
 import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface LopezBulletinRepository extends AbstractRepository {
+public interface AnonymousLopezBulletinRepository extends AbstractRepository {
 
 	@Query("select s from lopezBulletin s")
 	Collection<lopezBulletin> findMany();
