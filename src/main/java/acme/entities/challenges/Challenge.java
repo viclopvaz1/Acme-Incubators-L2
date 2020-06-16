@@ -8,6 +8,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 import javax.validation.Valid;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import acme.framework.datatypes.Money;
 import acme.framework.entities.DomainEntity;
@@ -17,7 +18,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class Challenges extends DomainEntity {
+public class Challenge extends DomainEntity {
 
 	public static final long	serialVersionUID	= 1L;
 
@@ -28,6 +29,7 @@ public class Challenges extends DomainEntity {
 	private String				description;
 
 	@NotBlank
+	@NotNull
 	private String				rookieGoal;
 
 	@NotBlank
@@ -37,14 +39,18 @@ public class Challenges extends DomainEntity {
 	private String				expertGoal;
 
 	@Valid
+	@NotNull
 	private Money				rookieReward;
 
 	@Valid
+	@NotNull
 	private Money				averageReward;
 
 	@Valid
+	@NotNull
 	private Money				expertReward;
 
 	@Temporal(TemporalType.TIMESTAMP)
+	@NotNull
 	private Date				deadline;
 }

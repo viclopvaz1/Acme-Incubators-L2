@@ -1,5 +1,5 @@
 
-package acme.entities.toolrecords;
+package acme.entities.technologyrecords;
 
 import javax.persistence.Entity;
 import javax.validation.constraints.NotBlank;
@@ -14,7 +14,7 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-public class ToolRecords extends DomainEntity {
+public class TechnologyRecord extends DomainEntity {
 
 	public static final long	serialVersionUID	= 1L;
 
