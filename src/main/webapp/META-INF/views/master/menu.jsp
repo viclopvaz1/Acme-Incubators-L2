@@ -23,6 +23,19 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-linkJ" action="https://play.pokemonshowdown.com"/> <%--josruialb--%>
             <acme:menu-suboption code="master.menu.anonymous.favourite-linkV" action="https://www.twitch.tv"/> <%--viclopvaz1--%>
             <acme:menu-suboption code="master.menu.anonymous.favourite-linkA" action="https://www.youtube.com/?hl=es&gl=ES"/> <%--albcorare26--%>
+		
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
+			
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-technology-record" action="/anonymous/technology-record/list"/>
+			
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
+		
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous2" access="isAnonymous()">
