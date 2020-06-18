@@ -51,6 +51,9 @@ master.menu.anonymous.list-tool-record = List Tool Record
 master.menu.administrator = Administrator
 master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
+master.menu.administrator.list-notice = Notice List
+master.menu.administrator.configuration = Spam List
+master.menu.administrator.dashboard = Dashboard
 master.menu.administrator.statistics = Statistics
 
 # master.menu.authenticated ###################################################
@@ -61,7 +64,6 @@ master.menu.authenticated.list-tool-record = List Tool Record
 master.menu.authenticated.list-inquirie = List inquiries
 master.menu.authenticated.list-overture = List overtures
 master.menu.authenticated.list-challenge = List challenges
-
 
 # master.menu.provider ########################################################
 
