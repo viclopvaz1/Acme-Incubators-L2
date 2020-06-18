@@ -25,7 +25,32 @@
 		<property name="sectors" value="Technology, Science, Arts, Business"></property> 
 	</bean>
 	
-		<bean name="technologyrecord01" class="acme.entities.technologyrecords.TechnologyRecord">
+	<bean name="banner01" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
+		<property name="slogan" value="Yo soy del betis" />
+		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
+		<property name="creditCard"><null/></property>
+	</bean>
+	
+	<bean name="banner02" class="acme.entities.banners.Banner">
+		<property name="picture" value="https://sevilla.abc.es/deportes/alfinaldelapalmera/wp-content/uploads/2018/06/Mividabetis.jpg" />
+		<property name="slogan" value="Yo soy del betis también" />
+		<property name="targetUrl" value="https://www.realbetisbalompie.es/" />
+		<property name="creditCard" ref="creditcard01" />
+	</bean>
+	
+	<bean name="creditcard01" class="acme.entities.creditcards.CreditCard">
+		<property name="holderName" value="Cordon" />
+		<property name="number" value="4294939855393654" />
+		<property name="brand" value="Pizza" />
+		<property name="monthExp" value="2" />
+		<property name="yearExp" value="2021" />
+		<property name="cvv" value="021"/>
+	</bean>
+	
+	
+	
+	<bean name="technologyrecord01" class="acme.entities.technologyrecords.TechnologyRecord">
 		<property name="title" value="Sample Technology 01" />
 		<property name="sector" value="Tecnology" />
 		<property name="name" value="Vicente Lopez" />

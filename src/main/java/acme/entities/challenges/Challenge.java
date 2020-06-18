@@ -29,7 +29,6 @@ public class Challenge extends DomainEntity {
 	private String				description;
 
 	@NotBlank
-	@NotNull
 	private String				rookieGoal;
 
 	@NotBlank
