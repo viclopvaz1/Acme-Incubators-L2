@@ -51,6 +51,17 @@ master.menu.anonymous.list-tool-record = Lista de Registro de Herramienta
 master.menu.administrator = Administrador
 master.menu.administrator.user-accounts = Cuentas de usuario
 master.menu.administrator.shutdown = Parar el sistema
+master.menu.administrator.statistics = Estadisticas
+
+
+# master.menu.authenticated ###################################################
+master.menu.authenticated = Autentificado
+master.menu.anonymous.list-notice = Lista de Avisos
+master.menu.anonymous.list-technology-record = Lista de Registro de Tecnologia
+master.menu.anonymous.list-tool-record = Lista de Registro de Herramienta
+master.menu.authenticated.list-inquirie = Lista de consultas
+master.menu.authenticated.list-overture = Lista de peticiones
+master.menu.authenticated.list-challenge = Lista de retos
 
 # master.menu.provider ########################################################
 
