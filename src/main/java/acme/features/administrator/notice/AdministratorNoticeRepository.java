@@ -12,10 +12,10 @@ import acme.framework.repositories.AbstractRepository;
 @Repository
 public interface AdministratorNoticeRepository extends AbstractRepository {
 
-	@Query("select a from Notices a where a.id = ?1")
+	@Query("select a from Notice a where a.id = ?1")
 	Notice findOneById(int id);
 
-	@Query("select a from Notices a")
+	@Query("select a from Notice a")
 	Collection<Notice> findMany();
 
 }
