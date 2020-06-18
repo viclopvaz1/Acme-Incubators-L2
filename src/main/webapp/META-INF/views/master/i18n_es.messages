@@ -42,6 +42,9 @@ master.menu.anonymous2.cordon-bulletin = Boletin de Cordon
 master.menu.anonymous2.list-cordon-bulletin = Lista de Boletines de Cordon
 master.menu.anonymous2.ruiz-bulletin = Boletin de Ruiz
 master.menu.anonymous2.list-ruiz-bulletin = Lista de Bolletines Ruiz
+master.menu.anonymous.list-notice = Lista de Avisos
+master.menu.anonymous.list-technology-record = Lista de Registro de Tecnologia
+master.menu.anonymous.list-tool-record = Lista de Registro de Herramienta
 
 # master.menu.administrator ###################################################
 
@@ -51,6 +54,17 @@ master.menu.administrator.shutdown = Parar el sistema
 master.menu.administrator.list-notice = Lista de Noticias
 master.menu.administrator.configuration = Lista de Spam
 master.menu.administrator.dashboard = Dashboard
+master.menu.administrator.statistics = Estadisticas
+
+
+# master.menu.authenticated ###################################################
+master.menu.authenticated = Autentificado
+master.menu.anonymous.list-notice = Lista de Avisos
+master.menu.anonymous.list-technology-record = Lista de Registro de Tecnologia
+master.menu.anonymous.list-tool-record = Lista de Registro de Herramienta
+master.menu.authenticated.list-inquirie = Lista de consultas
+master.menu.authenticated.list-overture = Lista de peticiones
+master.menu.authenticated.list-challenge = Lista de retos
 
 # master.menu.provider ########################################################
 

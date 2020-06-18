@@ -23,6 +23,19 @@
 			<acme:menu-suboption code="master.menu.anonymous.favourite-linkJ" action="https://play.pokemonshowdown.com"/> <%--josruialb--%>
             <acme:menu-suboption code="master.menu.anonymous.favourite-linkV" action="https://www.twitch.tv"/> <%--viclopvaz1--%>
             <acme:menu-suboption code="master.menu.anonymous.favourite-linkA" action="https://www.youtube.com/?hl=es&gl=ES"/> <%--albcorare26--%>
+		
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-notice" action="/anonymous/notice/list"/>
+			
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-technology-record" action="/anonymous/technology-record/list"/>
+			
+			<acme:menu-separator/>
+			
+			<acme:menu-suboption code="master.menu.anonymous.list-tool-record" action="/anonymous/tool-record/list"/>
+		
 		</acme:menu-option>
 		
 		<acme:menu-option code="master.menu.anonymous2" access="isAnonymous()">
@@ -50,6 +63,10 @@
 			<acme:menu-suboption code="master.menu.administrator.configuration" action="/administrator/configuration/list" />	
 			<acme:menu-separator/>
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />	
+		<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.administrator.statistics" action="/administrator/statistics/list"/>
+			
+			<acme:menu-separator/>
 		
 		</acme:menu-option>
 
@@ -73,6 +90,23 @@
 			<acme:menu-suboption code="master.menu.user-account.become-consumer" action="/authenticated/consumer/create" access="!hasRole('Consumer')"/>
 			<acme:menu-suboption code="master.menu.user-account.consumer" action="/authenticated/consumer/update" access="hasRole('Consumer')"/>
 		</acme:menu-option>
+
+        <acme:menu-option code="master.menu.authenticated" access="isAuthenticated()">
+        
+			<acme:menu-suboption code="master.menu.authenticated.list-notice" action="/authenticated/notice/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.list-technology-record" action="/authenticated/technology-record/list"/>
+			<acme:menu-separator/>
+			<acme:menu-suboption code="master.menu.authenticated.list-tool-record" action="/authenticated/tool-record/list"/>
+			<acme:menu-separator/>
+		    <acme:menu-suboption code="master.menu.authenticated.list-inquirie" action="/authenticated/inquirie/list" />
+			<acme:menu-separator/>	
+		    <acme:menu-suboption code="master.menu.authenticated.list-overture" action="/authenticated/overture/list" />
+			<acme:menu-separator/> 
+	      	<acme:menu-suboption code="master.menu.authenticated.list-challenge" action="/authenticated/challenge/list"/>
+			<acme:menu-separator/>
+		
+				</acme:menu-option>
 
 		<acme:menu-option code="master.menu.sign-out" action="/master/sign-out" access="isAuthenticated()"/>
 	</acme:menu-right>
