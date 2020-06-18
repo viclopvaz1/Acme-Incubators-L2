@@ -2,6 +2,7 @@
 package acme.entities.toolrecords;
 
 import javax.persistence.Entity;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 
 import org.hibernate.validator.constraints.Range;
@@ -35,6 +36,7 @@ public class ToolRecord extends DomainEntity {
 	private String				web;
 
 	@NotBlank
+	@Email
 	private String				email;
 
 	private Boolean				indication;
