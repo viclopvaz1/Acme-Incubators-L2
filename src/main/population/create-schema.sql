@@ -20,6 +20,43 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `banner` (
+       `id` integer not null,
+        `version` integer not null,
+        `picture` varchar(255),
+        `slogan` varchar(255),
+        `target_url` varchar(255),
+        `credit_card_id` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `challenge` (
+       `id` integer not null,
+        `version` integer not null,
+        `average_goal` varchar(255),
+        `average_reward_amount` double precision,
+        `average_reward_currency` varchar(255),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `expert_goal` varchar(255),
+        `expert_reward_amount` double precision,
+        `expert_reward_currency` varchar(255),
+        `rookie_goal` varchar(255),
+        `rookie_reward_amount` double precision,
+        `rookie_reward_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `configuration` (
+       `id` integer not null,
+        `version` integer not null,
+        `sectors` varchar(255),
+        `spam_threshold` double precision,
+        `spam_words` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `consumer` (
        `id` integer not null,
         `version` integer not null,
@@ -29,12 +66,93 @@
         primary key (`id`)
     ) engine=InnoDB;
 
+    create table `credit_card` (
+       `id` integer not null,
+        `version` integer not null,
+        `brand` varchar(255),
+        `cvv` integer,
+        `holder_name` varchar(255),
+        `month_exp` integer,
+        `number` varchar(255),
+        `year_exp` integer,
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `inquirie` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `notice` (
+       `id` integer not null,
+        `version` integer not null,
+        `body` varchar(255),
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `header` varchar(255),
+        `link` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `overture` (
+       `id` integer not null,
+        `version` integer not null,
+        `creation_moment` datetime(6),
+        `deadline` datetime(6),
+        `description` varchar(255),
+        `email` varchar(255),
+        `max_money_amount` double precision,
+        `max_money_currency` varchar(255),
+        `min_money_amount` double precision,
+        `min_money_currency` varchar(255),
+        `title` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
     create table `provider` (
        `id` integer not null,
         `version` integer not null,
         `user_account_id` integer,
         `company` varchar(255),
         `sector` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `technology_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` bit,
+        `name` varchar(255),
+        `sector` varchar(255),
+        `star` integer,
+        `title` varchar(255),
+        `web` varchar(255),
+        primary key (`id`)
+    ) engine=InnoDB;
+
+    create table `tool_record` (
+       `id` integer not null,
+        `version` integer not null,
+        `description` varchar(255),
+        `email` varchar(255),
+        `indication` bit,
+        `name` varchar(255),
+        `sector` varchar(255),
+        `star` integer,
+        `title` varchar(255),
+        `web` varchar(255),
         primary key (`id`)
     ) engine=InnoDB;
 
@@ -100,6 +218,11 @@
        add constraint FK_h52w0f3wjoi68b63wv9vwon57 
        foreign key (`user_account_id`) 
        references `user_account` (`id`);
+
+    alter table `banner` 
+       add constraint `FKr19baq0bri0akndc7ruwhngy4` 
+       foreign key (`credit_card_id`) 
+       references `credit_card` (`id`);
 
     alter table `consumer` 
        add constraint FK_6cyha9f1wpj0dpbxrrjddrqed 
