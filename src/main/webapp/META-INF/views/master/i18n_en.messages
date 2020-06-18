@@ -50,6 +50,7 @@ master.menu.administrator.user-accounts = User accounts
 master.menu.administrator.shutdown = Shut down
 master.menu.administrator.list-notice = Notice List
 master.menu.administrator.configuration = Spam List
+master.menu.administrator.dashboard = Dashboard
 
 # master.menu.provider ########################################################
 
