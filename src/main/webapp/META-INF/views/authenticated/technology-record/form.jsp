@@ -22,7 +22,7 @@
 	<acme:form-textarea code="authenticated.technology-record.form.label.description" path="description"/>
 	<acme:form-url code="authenticated.technology-record.form.label.web" path="web"/>
 		<acme:form-textbox code="authenticated.technology-record.form.label.email" path="email"/>
-		<acme:form-textbox code="authenticated.technology-record.form.label.indication" path="indication"/>
+		<acme:form-checkbox code="authenticated.technology-record.form.label.indication" path="indication"/>
 		<acme:form-textbox code="authenticated.technology-record.form.label.star" path="star"/>
 	
 	
