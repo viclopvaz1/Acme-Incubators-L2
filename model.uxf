@@ -491,7 +491,7 @@ ToolRecord
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=&lt;-&gt;
-m1=*
+m1=1
 m2=1
 &lt; has </panel_attributes>
     <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
