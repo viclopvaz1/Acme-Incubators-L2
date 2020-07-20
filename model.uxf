@@ -496,4 +496,20 @@ m2=1
 &lt; has </panel_attributes>
     <additional_attributes>10.0;20.0;150.0;20.0</additional_attributes>
   </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>189</x>
+      <y>357</y>
+      <w>217</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Entity&gt;&gt;
+Configuration
+--
++spamWords: String{NotBlank}
++spamThreshold: Double {@Min(0), Max(100), NotNull}
++sectors: Double {NotBlank}</panel_attributes>
+    <additional_attributes/>
+  </element>
 </diagram>
